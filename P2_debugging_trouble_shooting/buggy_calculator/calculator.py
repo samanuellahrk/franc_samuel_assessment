@@ -15,6 +15,7 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
+    #import pdb; pdb.set_trace()
     """Divide a by b and return the result.
     
     The bug is that this function incorrectly handles division when a is negative.
@@ -25,6 +26,6 @@ def divide(a, b):
     
     # The bug is here: subtly incorrect for negative numbers
     if a < 0:
-        return -(-a // b)  # This is incorrect for certain values
+        return -(-a / b)  # This is incorrect for certain values
     
     return a / b  # This is the correct implementation 

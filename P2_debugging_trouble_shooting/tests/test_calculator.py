@@ -1,6 +1,7 @@
 """
 Test suite for the buggy calculator module.
 """
+
 import pytest
 from buggy_calculator.calculator import add, subtract, multiply, divide
 
@@ -27,6 +28,8 @@ def test_multiply():
 
 
 def test_divide():
+    #import pdb; pdb.set_trace()
+
     """Test the divide function with a variety of inputs."""
     assert divide(6, 3) == 2
     assert divide(0, 5) == 0
