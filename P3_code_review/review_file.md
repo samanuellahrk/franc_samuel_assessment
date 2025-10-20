@@ -8,7 +8,7 @@ This document outlines the changes and improvements made to the original Task Tr
 
 - **Added global `id_counter`:**  
   Previously, task IDs were generated using `max(tasks.keys()) + 1`, which could cause duplicates if tasks were deleted.  
-  Now, `id_counter` ensures unique, sequential task IDs.
+  Now, `id_counter` (a variable in the JSON file) ensures unique, sequential task IDs.
 
 - **Improved `load_tasks()` and `save_tasks()`:**  
   - Added error handling for corrupted JSON files.  
